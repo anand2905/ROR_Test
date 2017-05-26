@@ -1,0 +1,21 @@
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.label :UserName %><br>
+    <%= f.text_field :u_name %>
+  </p>
+ 
+ <p>
+    <%= f.label :Password %><br>
+    <%= f.text_field :password %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.submit :login %>
+  </p>
+
+  <p>
+    <%= f.label :NewUser? %>
+    <%=link_to 'SignUp',  new_user_path %>
+  </p>
+<% end %>
